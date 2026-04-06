@@ -8,27 +8,28 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background: #0f172a;
     color: white;
 }
 
 header {
     background: linear-gradient(90deg, #16a34a, #22c55e);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 32px;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     background: #020617;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav a {
@@ -38,7 +39,7 @@ nav a {
 }
 
 .section {
-    padding: 40px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -50,8 +51,19 @@ nav a {
 
 .card {
     background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
 }
 
 .gallery img {
@@ -64,10 +76,9 @@ nav a {
     bottom: 20px;
     right: 20px;
     background: #25d366;
-    color: white;
-    padding: 15px;
+    padding: 18px;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
 }
 </style>
@@ -76,13 +87,13 @@ nav a {
 <body>
 
 <header>
-<h1>⚡ Genilson Elétrica e Construções</h1>
-<p>Qualidade, confiança e excelência em cada projeto</p>
+<h1>⚡ Genilson Elétrica & Construções</h1>
+<p>Profissionalismo, qualidade e confiança</p>
 </header>
 
 <nav>
-<a href="#servicos">Nossos Serviços</a>
-<a href="#projetos">Projetos Realizados</a>
+<a href="#servicos">Serviços</a>
+<a href="#projetos">Projetos</a>
 </nav>
 
 <section class="section" id="servicos">
@@ -92,22 +103,22 @@ nav a {
 
 <div class="card">
 <h3>🎨 Pintura</h3>
-<p>• Massa corrida<br>• Pintura de paredes<br>• Texturas<br>• Vernizes</p>
+<p>Massa corrida<br>Pintura<br>Texturas<br>Vernizes</p>
 </div>
 
 <div class="card">
 <h3>⚡ Elétrica</h3>
-<p>• Instalação residencial/comercial<br>• Chuveiros<br>• Lustres e luminárias</p>
+<p>Instalações<br>Chuveiros<br>Lustres</p>
 </div>
 
 <div class="card">
 <h3>🚿 Hidráulica</h3>
-<p>• Água fria e quente<br>• Louças e metais<br>• Prumadas<br>• Manutenção</p>
+<p>Água fria/quente<br>Louças<br>Manutenção</p>
 </div>
 
 <div class="card">
 <h3>🏗 Civil</h3>
-<p>• Serviços de pedreiro<br>• Telhados e calhas<br>• Pisos e porcelanatos</p>
+<p>Pedreiro<br>Telhados<br>Pisos e porcelanato</p>
 </div>
 
 </div>
@@ -117,14 +128,14 @@ nav a {
 <h2>Projetos Realizados</h2>
 
 <div class="gallery">
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
-<img src="https://via.placeholder.com/400">
+
+<img src="https://imgur.com/a/Qlx3pOb">
+<img src="https://imgur.com/a/Qlx3pOb">
+<img src="https://i.imgur.com/PLACEHOLDER3.jpg">
+<img src="https://i.imgur.com/PLACEHOLDER4.jpg">
+<img src="https://i.imgur.com/PLACEHOLDER5.jpg">
+
 </div>
-
-<br>
-
-<input type="file" multiple>
 
 </section>
 
